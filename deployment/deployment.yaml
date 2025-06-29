@@ -13,15 +13,8 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-container
-        image: sakshi00/flask-app:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 5000
-        resources:
-          requests:
-            cpu: "100m"
-            memory: "128Mi"
-          limits:
-            cpu: "250m"
-            memory: "256Mi"
+        - name: flask-container
+          image: sneha1101/flask-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
