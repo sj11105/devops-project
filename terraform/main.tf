@@ -98,7 +98,7 @@ ingress {
 
 # Key pair
 resource "aws_key_pair" "deployer" {
-  key_name   = "deployer-key-sneha"
+  key_name   = "deployer-key-sneha1"
   public_key = file("C:/Users/sneha/.ssh/id_rsa.pub")
 }
 
